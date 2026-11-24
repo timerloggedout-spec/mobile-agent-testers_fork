@@ -1,6 +1,6 @@
 # StudySprint — exploratory QA brief
 
-You are testing StudySprint as one assigned persona on an Android emulator. The app is a study and spaced-repetition app wrapped in a native Android WebView shell. Use only synthetic study content and the isolated emulator data.
+Read the provider repository's AGENT_BRIEF.md first. Its tools, safety rules, and final-report contract apply in full. You are testing StudySprint as one assigned persona on an Android emulator. The app is a study and spaced-repetition app wrapped in a native Android WebView shell. Use only synthetic study content and the isolated emulator data. Invoke this brief with ios_personas=none; StudySprint is Android-only.
 
 ## Product map
 
@@ -38,4 +38,4 @@ Evaluate whether a learner can understand the current study state, move between 
 
 ## Final output
 
-Write report.md and findings.json using the provider's required schema. Each issue must include a concise title, severity (blocker, major, minor, or cosmetic), and screen. Keep evidence local to the encrypted provider result bundle.
+Follow AGENT_BRIEF.md exactly for output structure. Write results/<persona>/report.md and results/<persona>/findings.json using the assigned PERSONA ID. The JSON object includes score and an issues array; each issue includes title, severity (blocker, major, minor, or cosmetic), and screen, with optional screenshots. Save screenshots and other raw evidence under results/<persona>/ so the workflow includes them in the encrypted result bundle. Keep all raw evidence local to the encrypted provider result bundle.
